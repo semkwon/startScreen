@@ -27,37 +27,15 @@ main {
   justify-content: center;
   align-items: center;
 }
-main .time {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.787);
-  width: 250px;
-  text-align: left;
+
+.time {
+  border: 1px solid rgba(255, 255, 255, 0.787);
+  width: 180px;
+  text-align: center;
   font-size: 40px;
-  padding: 5px auto;
-  color: rgba(255, 255, 255, 0.787);
-}
-main .quotes {
-  position: relative;
-  font-size: 60px;
-}
-main .quotes .quotesAddBtn {
-  display: none;
-  position: absolute;
-  width: 150px;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-}
-main .quotes:hover .quotesAddBtn {
-  display: inline-block;
-}
-main .newQuotes {
-  display: none;
-}
-main .newQuotes .newQuotesBtn {
-  background-color: transparent;
-  border: 1px solid black;
+  padding: 5px 10px;
   border-radius: 20px;
-  padding: 5px 13px;
+  color: rgba(255, 255, 255, 0.787);
 }
 
 /*# sourceMappingURL=style.css.map */
