@@ -27,14 +27,42 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.time {
-  border: 1px solid rgba(255, 255, 255, 0.787);
-  width: 180px;
-  text-align: center;
-  font-size: 40px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 0.787);
+  .time {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.787);
+    width: 250px;
+    text-align: left;
+    font-size: 40px;
+    padding: 5px auto;
+    color: rgba(255, 255, 255, 0.787);
+  }
+  .quotes {
+    position: relative;
+    font-size: 60px;
+
+    .quotesAddBtn {
+      display: none;
+      position: absolute;
+      width: 150px;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    &:hover {
+      .quotesAddBtn {
+        display: inline-block;
+      }
+    }
+  }
+  .newQuotes {
+    display: none;
+
+    .newQuotesBtn {
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 5px 13px;
+    }
+  }
 }
