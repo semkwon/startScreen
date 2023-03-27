@@ -68,12 +68,55 @@ main .newQuotes .newQuotesBtn {
   border-radius: 20px;
   padding: 5px 13px;
 }
-main .search .searchLogo {
+main .search .searchTitle .searchLogo {
   width: 32px;
   height: 32px;
   animation: spin 10s linear infinite;
 }
 main .searchResult {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 100px;
+  height: 100px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
   display: none;
 }
 
