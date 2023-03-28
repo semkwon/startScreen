@@ -95,7 +95,7 @@ async function onClickSearch() {
   // 여기까지 왔다는 의미 === isLoading false
   isLoading = true;
   const question = searchInput.value;
-  searchInput.value = "검색 중 입니다... 잠시만 기다려주세요.";
+  searchInput.value = "Searching...";
 
   // 프론트엔드에서 백엔드
   const response = await axios.post(
@@ -132,3 +132,29 @@ function onClickToggle(value) {
     nftView.style.display = "inline-block";
   }
 }
+
+function onClickDonate() {
+  alert("0x9250518aA3962710878285A84CD99c5eD5eF1a4c");
+}
+
+function getDate() {
+  const date = document.querySelector(".date");
+  const newDate2 = new Date();
+
+  let dateNow, monthNow, dayNow;
+  dateNow = newDate2.getDate();
+  monthNow = newDate2.getMonth() + 1;
+  dayNow = newDate2.getDay();
+
+  var weekday = new Array();
+  weekday[0] = "일요일";
+  weekday[1] = "월요일";
+  weekday[2] = "화요일";
+  weekday[3] = "수요일";
+  weekday[4] = "목요일";
+  weekday[5] = "금요일";
+  weekday[6] = "토요일";
+
+  date.innerText = `${monthNow}월 ${dateNow}일 ${weekday[dayNow]}`;
+}
+getDate();

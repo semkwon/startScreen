@@ -35,26 +35,43 @@ main {
   justify-content: center;
   align-items: center;
 }
+main .date {
+  position: fixed;
+  top: 0;
+  margin: 24px;
+  font-size: 15px;
+}
 main .time {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.787);
+  position: fixed;
+  top: 21px;
+  margin: 24px;
+  border-bottom: 1px solid black;
   width: fit-content;
   text-align: left;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 27px;
   padding: 0 5px;
-  color: rgba(255, 255, 255, 0.787);
 }
 main .quotes {
   position: relative;
-  font-size: 60px;
+  font-size: 30px;
+}
+main .quotes .quotesMsg {
+  padding: 10px;
 }
 main .quotes .quotesAddBtn {
+  font-size: 8px;
   display: none;
   position: absolute;
-  width: 150px;
+  width: 50px;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  box-sizing: border-box;
+  height: 20px;
+  width: 37px;
+  font-size: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 main .quotes:hover .quotesAddBtn {
   display: inline-block;
@@ -62,16 +79,64 @@ main .quotes:hover .quotesAddBtn {
 main .newQuotes {
   display: none;
 }
-main .newQuotes .newQuotesBtn {
-  background-color: transparent;
+main .newQuotes .newQuotesInput {
+  float: left;
+  box-sizing: border-box;
+  height: 20px;
+  width: 145px;
   border: 1px solid black;
-  border-radius: 20px;
-  padding: 5px 13px;
+  border-radius: 5px;
+}
+main .newQuotes .newQuotesBtn {
+  background-color: #efefef;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: left;
+  box-sizing: border-box;
+  height: 20px;
+  width: 37px;
+  font-size: 10px;
+  margin-left: 8px;
+}
+main .search {
+  text-align: center;
+  padding: 10px;
+}
+main .search .searchTitle {
+  float: left;
 }
 main .search .searchTitle .searchLogo {
-  width: 32px;
-  height: 32px;
+  float: left;
+  width: 20px;
+  height: 20px;
   animation: spin 10s linear infinite;
+}
+main .search .searchTitle .question {
+  width: 150px;
+}
+main .search .searchForm {
+  float: left;
+  box-sizing: border-box;
+  height: 20px;
+  width: 200px;
+}
+main .search .searchForm .searchInput {
+  float: left;
+  box-sizing: border-box;
+  height: 20px;
+  width: 145px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+main .search .searchForm .searchButton {
+  float: left;
+  box-sizing: border-box;
+  height: 20px;
+  width: 37px;
+  font-size: 10px;
+  margin-left: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 main .searchResult {
   display: none;
@@ -83,29 +148,36 @@ main .nft {
   margin: 24px;
 }
 main .nft img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 main .nft .nftHover {
   position: absolute;
   display: none;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-main .nft .nftHover a {
+main .nft .nftHover .donationBtn {
   color: white;
+  font-size: 2px;
+  background-color: lightblue;
+  border-radius: 20px;
 }
-main .nft .nftHover button {
+main .nft .nftHover .onClickToggle {
   position: absolute;
   top: 0;
   right: 0;
   margin: -8px;
   border-radius: 100%;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
+  font-size: 1px;
+  padding: 0;
+  color: white;
+  background-color: lightblue;
 }
 main .nft:hover .nftHover {
   display: flex;
@@ -113,11 +185,18 @@ main .nft:hover .nftHover {
   align-items: center;
 }
 main .nftView {
+  color: white;
+  font-size: 2px;
+  background-color: lightblue;
+  border-radius: 20px;
   position: fixed;
   top: 0;
   right: 0;
   margin: 24px;
   display: none;
+}
+main .searchResult {
+  margin: 0 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
